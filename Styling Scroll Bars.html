@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="Styling Scroll Bars.css" />
+        <title>Document</title>
+        <style>
+            /* Works on Firefox */
+            * {
+                scrollbar-width: thin;
+                scrollbar-color: blue orange;
+            }
+            /* Works on Chrome, Edge, and Safari */
+            *::-webkit-scrollbar {
+                width: 12px;
+            }
+
+            *::-webkit-scrollbar-track {
+                background: orange;
+            }
+
+            *::-webkit-scrollbar-thumb {
+                background-color: blue;
+                border-radius: 20px;
+                border: 3px solid orange;
+            }
+
+
+            /* -------------------------------------------- */
+
+            .container {
+                width: 3560px;
+                height: 2440px;
+            }
+
+            .container > p {
+                width: 50%;
+                margin: 0 auto;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <p>Hello !</p>
+        </div>
+    </body>
+</html>
